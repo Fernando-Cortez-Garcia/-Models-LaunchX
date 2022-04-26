@@ -1,0 +1,15 @@
+{
+    "name": "twitter",
+    "version": "1.0.0",
+    "description": "Agregar modelos creando una app twitter",
+    "main": "index.js",
+    "scripts": {
+        "start": "node index.js",
+        "test": "node --experimental-vm-modules ./node_modules/jest/bin/jest"
+    },
+    "author": "Fernando Cortez G",
+    "license": "ISC",
+    "devDependencies": {
+        "jest": "^28.0.0"
+    }
+}
