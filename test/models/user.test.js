@@ -13,3 +13,29 @@ describe('Create test for user class', () => {
         expect(user.lastUpdated).not.toBeUndefined();
     });
 })
+
+//test de getter user
+describe('Create test for comproved getters the user', () => {
+    test('Add getters', () => {
+        const user = new User(1, "FernandoC", "Fernando", "Programmer")
+            //comproved test
+        expect(user.getUserName()).toBe("FernandoC")
+        expect(user.getBio()).toBe("Programmer")
+        expect(user.getDateCreated()).not.toBeUndefined()
+        expect(user.getLastUpdated()).not.toBeUndefined()
+    })
+})
+
+//comproved setters de user
+
+describe('add setter a class user', () => {
+    test('Add setter', () => {
+        const user = new User(1, "Fernandoc", "Fernando", "Programmer")
+            //aproved test
+        user.setUserName = "FernadoCG"
+        expect(user.username).toBe("FernadoCG")
+
+        user.setBio = "new bio"
+        expect(user.bio).toBe("new bio")
+    })
+})
